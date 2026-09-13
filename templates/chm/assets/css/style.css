@@ -1,0 +1,25 @@
+body {
+background-color: black;
+}
+hr.gradient-hr {
+    display: block !important;
+    width: 400px !important;
+    height: 5px !important;
+    min-height: 5px !important;
+    margin: 4px 0 !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+    outline: 0 !important;
+
+    background-color: transparent !important;
+
+    background-image: linear-gradient(
+        90deg,
+        #87CEFA 0%,
+        #5DBBFF 20%,
+        #FF4040 50%,
+        #5DBBFF 80%,
+        #87CEFA 100%
+    ) !important;
+}
