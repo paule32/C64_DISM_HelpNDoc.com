@@ -23,3 +23,19 @@ hr.gradient-hr {
         #87CEFA 100%
     ) !important;
 }
+.math-table {
+  width: 56;
+  height: 20pt
+}
+.math-left {
+  color: yellow;
+  display: left;
+  background-color: black;
+  text-align: left;
+}
+.math-center {
+  color: white;
+  display: center;
+  background-color: black;
+  text-align: center;
+}

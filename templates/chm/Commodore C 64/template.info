@@ -111,3 +111,16 @@ default=
 kind=memo
 values=
 
+[var_CustomServer]
+name=Custom Server
+name.de=
+name.es=
+name.fr=
+description=Server für die SVG Grafiken
+description.de=
+description.es=
+description.fr=
+default=https://servera/
+kind=string
+values=
+

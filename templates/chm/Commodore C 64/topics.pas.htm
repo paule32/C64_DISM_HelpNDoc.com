@@ -387,146 +387,179 @@ MathJax.Hub.Config({
             then begin
                 htmlContent := getTemplateHtml;
                 htmlContent := StringReplace(
-                    htmlContent,
-                    '[::Template::]',
-                    HndTopics.GetTopicContentAsHtml(HndGeneratorInfo.CurrentTopic),
-                    [rfReplaceAll]);
+                
+                htmlContent,
+                '[::Template::]',
+                HndTopics.GetTopicContentAsHtml(HndGeneratorInfo.CurrentTopic),
+                [rfReplaceAll]);
+                
                 if Pos('[::TemplateMITLicense::]', htmlContent) > 0 then
                 begin
                     htmlContent := StringReplace(
-                        htmlContent,
-                        '[::TemplateMITLicense::]','',
-                        [rfReplaceAll]);
+                    htmlContent,
+                    '[::TemplateMITLicense::]','',
+                    [rfReplaceAll]);
+                    
                     htmlContent := StringReplace(
-                        htmlContent,
-                        '[::TemplateTitle::]',
-                        'MIT - Lizenzen',
-                        [rfReplaceAll]);
+                    htmlContent,
+                    '[::TemplateTitle::]',
+                    'MIT - Lizenzen',
+                    [rfReplaceAll]);
+                    
                     htmlContent := StringReplace(
-                        htmlContent,
-                        '[::TemplateContent::]',
-                        'Lizenz',
-                        [rfReplaceAll]);
+                    htmlContent,
+                    '[::TemplateContent::]',
+                    'Lizenz',
+                    [rfReplaceAll]);
+                    
                     htmlContent := StringReplace(
-                        htmlContent,
-                        '[::TemplateSubject::]',
-                        'Bitte Lesen - Danke !',
-                        [rfReplaceAll]);
+                    htmlContent,
+                    '[::TemplateSubject::]',
+                    'Bitte Lesen - Danke !',
+                    [rfReplaceAll]);
+                    
                     htmlContent := StringReplace(
-                        htmlContent,
-                        '[::TemplateBottomLink::]',
-                        '&nbsp;',
-                        [rfReplaceAll]);
+                    htmlContent,
+                    '[::TemplateBottomLink::]',
+                    '&nbsp;',
+                    [rfReplaceAll]);
                 end;
                 if Pos('[::Template Common::]', htmlContent) > 0 then
                 begin
                     htmlContent := StringReplace(
-                        htmlContent,
-                        '[::Template Common::]','',
-                        [rfReplaceAll]);
+                    htmlContent,
+                    '[::Template Common::]','',
+                    [rfReplaceAll]);
+                    
                     htmlContent := StringReplace(
-                        htmlContent,
-                        '[::TemplateTitle::]',
-                        'Logik und Mengenlehre',
-                        [rfReplaceAll]);
+                    htmlContent,
+                    '[::TemplateTitle::]',
+                    'Logik und Mengenlehre',
+                    [rfReplaceAll]);
+                    
                     htmlContent := StringReplace(
-                        htmlContent,
-                        '[::TemplateContent::]',
-                        'Lizenz',
-                        [rfReplaceAll]);
+                    htmlContent,
+                    '[::TemplateContent::]',
+                    'Lizenz',
+                    [rfReplaceAll]);
+                    
                     htmlContent := StringReplace(
-                        htmlContent,
-                        '[::TemplateSubject::]',
-                        'Bitte Lesen - Danke !',
-                        [rfReplaceAll]);
+                    htmlContent,
+                    '[::TemplateSubject::]',
+                    'Bitte Lesen - Danke !',
+                    [rfReplaceAll]);
+                    
                     htmlContent := StringReplace(
-                        htmlContent,
-                        '[::TemplateBottomLink::]',
-                        '&nbsp;',
-                        [rfReplaceAll]);
+                    htmlContent,
+                    '[::TemplateBottomLink::]',
+                    '&nbsp;',
+                    [rfReplaceAll]);
                 end;
                 if  Pos('[::Template Hessenberg::]', htmlContent) > 0 then
                 begin
                     htmlContent := StringReplace(
-                        htmlContent,
-                        '[::TemplateTitle::]',
-                        'Logik und Mengenlehre',
-                        [rfReplaceAll]);
+                    htmlContent,
+                    '[::TemplateTitle::]',
+                    'Logik und Mengenlehre',
+                    [rfReplaceAll]);
+                    
                     htmlContent := StringReplace(
-                        htmlContent,
-                        '[::TemplateSubject::]',
-                        'Über das Unendliche in der Mathematik',
-                        [rfReplaceAll]);
+                    htmlContent,
+                    '[::TemplateSubject::]',
+                    'Über das Unendliche in der Mathematik',
+                    [rfReplaceAll]);
+                    
                     htmlContent := StringReplace(
-                        htmlContent,
-                        '[::TemplateContent::]',
-                        'G. Hessenberg',
-                        [rfReplaceAll]);
+                    htmlContent,
+                    '[::TemplateContent::]',
+                    'G. Hessenberg',
+                    [rfReplaceAll]);
+                    
                     htmlContent := StringReplace(
-                        htmlContent,
-                        '[::TemplateBottomLink::]',
-                        '<b><i><a href="https://">Staats-Biblothek München/a></i></b>',
-                        [rfReplaceAll]);
+                    htmlContent,
+                    '[::TemplateBottomLink::]',
+                    '<b><i><a href="https://">Staats-Biblothek München/a></i></b>',
+                    [rfReplaceAll]);
                 end;
                 if  Pos('[::Template DIN-5473::]', htmlContent) > 0 then
                 begin
                     htmlContent := StringReplace(
-                        htmlContent,
-                        '[::Template DIN-5473::]', '',
-                        [rfReplaceAll]);
+                    htmlContent,
+                    '[::Template DIN-5473::]', '',
+                    [rfReplaceAll]);
+                        
                     htmlContent := StringReplace(
-                        htmlContent,
-                        '[::TemplateTitle::]',
-                        'Logik und Mengenlehre',
-                        [rfReplaceAll]);
+                    htmlContent,
+                    '[::TemplateTitle::]',
+                    'Logik und Mengenlehre',
+                    [rfReplaceAll]);
+                        
                     htmlContent := StringReplace(
-                        htmlContent,
-                        '[::TemplateSubject::]',
-                        'Zeichen und Symbole',
-                        [rfReplaceAll]);
+                    htmlContent,
+                    '[::TemplateSubject::]',
+                    'Zeichen und Symbole',
+                    [rfReplaceAll]);
+                        
                     htmlContent := StringReplace(
-                        htmlContent,
-                        '[::TemplateContent::]',
-                        'DIN-5473',
-                        [rfReplaceAll]);
+                    htmlContent,
+                    '[::TemplateContent::]',
+                    'DIN-5473',
+                    [rfReplaceAll]);
+                        
                     htmlContent := StringReplace(
-                        htmlContent,
-                        '[::TemplateBottomLink::]',
-                        '<b><i><a href="https://www.din.de/de">DIN - Deutsches Institut für Normung</a></i></b>',
-                        [rfReplaceAll]);
+                    htmlContent,
+                    '[::TemplateBottomLink::]',
+                    '<b><i><a href="https://www.din.de/de">DIN - Deutsches Institut für Normung</a></i></b>',
+                    [rfReplaceAll]);
                 end;
-                htmlContent := StringReplace(
+                if Pos('[::CustomServer::]', htmlContent) > 0 then
+                begin
+                    htmlContent := StringReplace(
+                    htmlContent,
+                    '[::CustomServer::]',
+                     HndGeneratorInfo.GetCustomSettingValue('CustomServer'),
+                     [rfReplaceAll]);
+                end;
+                if Pos('[::Template_Date::]', htmlContent) > 0 then
+                begin
+                    htmlContent := StringReplace(
                     htmlContent,
                     '[::Template_Date::]',
                     IntToStr(yearof(now)),
                     [rfReplaceAll]);
-                htmlContent := StringReplace(
+                end;
+                if Pos('[::TemplateMDnewLine::]', htmlContent) > 0 then
+                begin
+                    htmlContent := StringReplace(
                     htmlContent,
                     '[::TemplateMDnewLine::]',
                     '<br>',
                     [rfReplaceAll]);
-                
+                end;
                 s1 := getNextTopic;
                 if s1 = '#' then
                 s1 := '#' else
                 s1 := s1 + '.htm';
-                
-                htmlContent := StringReplace(
+
+                if Pos('[::NextTopic::]', htmlContent) > 0 then
+                begin                
+                    htmlContent := StringReplace(
                     htmlContent,
                     '[::NextTopic::]',
                     '<span class="nextlink"><a href="'+s1+'">Weiter >></a></span>',
                     [rfReplaceAll]);
                 
-                s1 := getPrevTopic;
-                if s1 = '#' then
-                s1 := '#' else
-                s1 := s1 + '.htm';
+                    s1 := getPrevTopic;
+                    if s1 = '#' then
+                    s1 := '#' else
+                    s1 := s1 + '.htm';
                 
-                htmlContent := StringReplace(
+                    htmlContent := StringReplace(
                     htmlContent,
                     '[::PrevTopic::]',
                     '<span class="nextlink"><a href="'+s1+'"><< Zurück</a></span>',
                     [rfReplaceAll]);
+                end;
                 print(htmlContent);
             end;
         %>
